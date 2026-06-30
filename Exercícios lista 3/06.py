@@ -96,6 +96,21 @@ while True:
                 print("Cadastro excluído com sucesso!")
             else:
                 print("Pessoa não encontrada.")
+
+        elif opcao == "5":
+            # Excluir
+            nome = input("Digite o codigo da pessoa a excluir: ")
+
+            if nome in nomes:
+                indice = nomes.index(nome)
+                nomes.pop(indice)
+                idades.pop(indice)
+                alturas.pop(indice)
+                pesos.pop(indice)
+                codigos.pop(codigo)
+                print("Cadastro excluído com sucesso!")
+            else:
+                print("Pessoa não encontrada.")
                     
         elif opcao == "0":
             print("Programa encerrado.")
