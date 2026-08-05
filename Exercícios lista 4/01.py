@@ -1,7 +1,4 @@
-# Lista de bairros de Garopaba
-
-# Adicionando o primeiro bairro manualmente
-bairros = ["Centro"]
+bairros = []
 
 # Solicitando mais 5 bairros ao usuário
 for i in range(5):
