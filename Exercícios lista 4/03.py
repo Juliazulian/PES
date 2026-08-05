@@ -10,11 +10,13 @@ for i in range(y):
     notas.append(nota)
     #le a lista toda e mostra todas as notas
     for nota in notas:
-        print(nota)
+      print(nota)
+#Com while
+i = 0 #começa na primeira posição da lista
+while i < len(notas): # informa quantas notas existem
+   print("Nota:", notas[i]) # mostra a nota na posição i
+   i += 1 # passa para a próxima posição
 
-
-
-
-
-
-
+#Com for
+for nota in notas:
+   print("Nota:", nota)
