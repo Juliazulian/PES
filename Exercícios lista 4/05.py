@@ -20,19 +20,19 @@ while opcao != 0 :
             if amigo in amigos_proximos:
                 print("Esse amigo ja esta na lista.")
             else:
-                indice = amigos_proximos.index(amigo)
-                amigos_proximos[indice] = amigo
+                amigos_proximos.append(amigo)
                 print("Ebaaaa, novo amigo aicionado!")
 
     elif opcao == 2:
-        amigo = input("Digite o amigo que deseja excluir: ").upper()
+        amigo = input("Digite o amigo que deseja excluir: ")
 
         if amigo in amigos_proximos:
-            indice = amigos_proximos.index(amigo)
-            amigos_proximos[indice] = None
+            amigos_proximos.remove(amigo)
+            #indice = amigos_proximos.index(amigo)
+            #amigos_proximos[indice] = None
             print("Pessoa excluida com sucesso...")
         else:
-            print("Falha: Este usuario não foi encontrado e voce deveria saber.")
+            print("Falha: Este usuario não foi encontrado.")
 
     elif opcao == 3:
         print("AMIGOS PROXIMOS:")
