@@ -17,8 +17,8 @@ def divisao(a, b):
 
 
 def calculadora():
-    num1 = float(input("Digite o primeiro número: "))
-    num2 = float(input("Digite o segundo número: "))
+    num1 = float(input("Digite o primeiro número: \n-"))
+    num2 = float(input("Digite o segundo número: \n-"))
 
     while True:
         print("\n===== CALCULADORA =====")
@@ -28,7 +28,7 @@ def calculadora():
         print("4 - Divisão")
         print("0 - Sair")
 
-        opcao = input("Escolha uma opção: ")
+        opcao = input("Escolha uma opção: \n-")
 
         if opcao == "1":
             resultado = adicao(num1, num2)
