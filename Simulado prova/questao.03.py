@@ -7,3 +7,5 @@ if valor_total >= 100 :
     discount = valor_total * 0.10
     total = valor_total - discount
     print(f"Sua compra foi de {total} reais ")
+else:
+    print(f"Sua compra foi de {valor_total} reais ")
