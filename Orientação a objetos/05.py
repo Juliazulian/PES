@@ -4,18 +4,15 @@ class Pessoa:
         self.idade = idade
         self.altura = altura
         self.peso = peso
-
-    # Exibe os dados da pessoa
+        
     def exibir_dados(self):
         print(f"Nome: {self.nome} | Idade: {self.idade} | "
             f"Altura: {self.altura}m | Peso: {self.peso}kg")
 
-    # Calcula e exibe o IMC
     def calcular_imc(self):
         imc = self.peso / (self.altura ** 2)
         print(f"IMC: {imc:.2f}")
 
-    # Exibe o nome e o IMC
     def exibir_nome_imc(self):
         imc = self.peso / (self.altura ** 2)
         print(f"Nome: {self.nome} | IMC: {imc:.2f}")
